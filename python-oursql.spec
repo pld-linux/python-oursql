@@ -33,10 +33,7 @@ Python 2.x version.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py \
-	install \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %py_postclean
 
